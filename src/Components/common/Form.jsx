@@ -1,7 +1,15 @@
 import "./form.scss";
 
 export const Form = (props) => (
-  <form className="form" onSubmit={props.onSubmit} action={null}>
+  <form
+    className="form"
+    onSubmit={(event) => {
+      event.preventDefault();
+      props.onSubmit();
+      // rest of your code goes here...
+    }}
+    action={null}
+  >
     {props.children}
   </form>
 );
@@ -50,7 +58,7 @@ export const TextArea = (props) => (
 );
 
 export const Button = (props) => (
-  <button className="button" type="button" onClick={props.onSubmit}>
+  <button className="button" type="submit">
     {props.children}
   </button>
 );

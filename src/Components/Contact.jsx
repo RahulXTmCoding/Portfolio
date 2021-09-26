@@ -85,7 +85,7 @@ const Contact = () => {
         >
           Have a question, want to work together or want to hire me.?
         </h2>
-        <Form>
+        <Form onSubmit={onSubmit}>
           <TextInput
             name="name"
             label="Name"
@@ -119,7 +119,7 @@ const Contact = () => {
             onBlur={(e) => handleBlur(e, "message")}
             onChange={(e) => handleChange(e, "message")}
           />
-          <Button onSubmit={onSubmit}>Send</Button>
+          <Button>Send</Button>
         </Form>
       </ContactConatiner>
     </SKillsContainer>
