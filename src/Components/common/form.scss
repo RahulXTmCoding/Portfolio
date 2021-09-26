@@ -1,0 +1,89 @@
+.form {
+  padding: 2rem;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  background-color: #0074b8;
+  border: none;
+  border-radius: 3px;
+  padding: 1ch;
+  font-size: 1rem;
+  color: #fff;
+  font-family: inherit;
+}
+
+@mixin input {
+  display: block;
+  width: 100%;
+  border: 2px solid #eee;
+  padding: 1ch;
+  border-radius: 3px;
+  transition: 150ms ease;
+  outline: none;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #151515;
+  color: white;
+}
+
+@mixin input-focus {
+  border-color: #0074b8;
+}
+
+@mixin label {
+  position: absolute;
+  top: 1ch;
+  left: 1ch;
+  padding: 0 0.5ch;
+  pointer-events: none;
+  transition: 150ms ease;
+  background-color: #151515;
+  color: #888;
+}
+
+@mixin label-focus {
+  position: absolute;
+  top: 0;
+  font-size: 0.9em;
+  color: #0074b8;
+  font-weight: bold;
+  transform: translateY(-50%);
+  font-weight: 600;
+}
+
+.text-input {
+  position: relative;
+  margin-bottom: 1rem;
+  label {
+    @include label;
+  }
+  label.label-focus {
+    @include label-focus;
+  }
+  input {
+    @include input;
+  }
+  input.input-focus {
+    @include input-focus;
+  }
+}
+
+.text-area {
+  position: relative;
+  margin-bottom: 1rem;
+  label {
+    @include label;
+  }
+  label.label-focus {
+    @include label-focus;
+  }
+  textarea {
+    @include input;
+    height: 8em;
+  }
+  textarea.input-focus {
+    @include input-focus;
+  }
+}
