@@ -96,7 +96,7 @@ const StyledHeader = styled.header`
     display: block;
     z-index: 0;
     content: "";
-    opacity: 0.15;
+    opacity: 0.2;
     pointer-events: none;
   }
 `;
