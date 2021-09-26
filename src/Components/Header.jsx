@@ -23,7 +23,7 @@ const Header = ({ scrolled }) => {
           </StyledLogo>
           <StyledMenuRow>
             <a href="/#whatido">WHAT I DO</a>
-            <a href="/#about">About</a>
+            <a href="/#about">About Me</a>
             <a href="/#skills">Skills</a>
             <a href="/#resume">Experience</a>
             <a href="/#contact">Contact</a>
@@ -35,7 +35,7 @@ const Header = ({ scrolled }) => {
                 WHAT I DO
               </a>
               <a href="/#about" onClick={() => onClose()}>
-                About
+                About Me
               </a>
               <a href="/#skills" onClick={() => onClose()}>
                 Skills
