@@ -22,6 +22,19 @@ const Home = () => {
             Download Resume
           </StyledAboutButton>
         </BottonRow>
+        <BottonRow>
+          <a
+            href="https://www.buymeacoffee.com/rahulxcode"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
+              alt="Buy Me A Coffee"
+              style={{ height: "50px", width: "200px" }}
+            />
+          </a>
+        </BottonRow>
       </StyledContent>
       <SocialShare>
         <a
@@ -69,7 +82,7 @@ export default Home;
 
 const StyledHeader = styled.header`
   background: black;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   &:before {
     background-position: 50%;
@@ -153,6 +166,10 @@ const SocialShare = styled.div`
     margin: 10px;
     background-color: white;
     color: black;
+
+    @media (max-width: 768px) {
+      margin: 4px;
+    }
   }
 
   .fa:hover {
