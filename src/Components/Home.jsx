@@ -86,8 +86,8 @@ const StyledHeader = styled.header`
   text-align: center;
   &:before {
     background-position: 50%;
-    background-size: 750px;
-    background-image: url("http://matheusalves.net/img/icon-bg.jpg");
+    background-size: 100vh;
+    background-image: url("../background.jpg");
     position: absolute;
     top: 0;
     left: 0;
