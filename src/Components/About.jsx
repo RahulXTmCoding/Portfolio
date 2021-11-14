@@ -2,6 +2,7 @@ import { Col, Row } from "antd";
 import styled from "styled-components";
 import Container from "./common/Container";
 import DevImage from "../assest/dev.png";
+import Photo from "../assest/photo.jfif";
 
 const About = () => {
   return (
@@ -23,10 +24,7 @@ const About = () => {
           data-wow-duration="1s"
         >
           <ProfilePicContainer md={7} xs={24}>
-            <ProfileImage
-              src="https://drive.google.com/uc?export=view&id=1385r4rGtlf3MkXW9D6NS7VlZBE8Ax8ik"
-              alt="profile_pic"
-            />
+            <ProfileImage src={Photo} alt="profile_pic" />
             <p>Node.JS | React | React Native | Next.js</p>
           </ProfilePicContainer>
           <ProfileContent md={17} xs={24}>

@@ -16,7 +16,7 @@ const Home = () => {
         <BottonRow>
           <StyledAboutButton href="#whatido">TELL ME MORE</StyledAboutButton>
           <StyledAboutButton
-            href="https://drive.google.com/file/d/1tJnNpkut5Gazs9kLlyCao1Q2Y2cvPU-K/view?usp=sharing"
+            href="https://drive.google.com/file/d/1gnOIsTSnBqccBwONNqoSiAp_e4UTlqMW/view?usp=sharing"
             target="_blank"
           >
             Download Resume
