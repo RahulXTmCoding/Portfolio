@@ -264,9 +264,9 @@ const ArrowDiv = styled.div`
   }
 `;
 
-const common = ` position: absolute;
+const common = ` 
+position: absolute;
 top: 5px;
-${(props) => (props.switch ? "right: 55%;" : "left: 55%;")}
 h3 {
   font-weight: bold;
   font-size: 20px;
@@ -288,6 +288,7 @@ span {
 
 const JobTitleDiv = styled.div`
   ${common}
+  ${(props) => (props.switch ? "right: 55%;" : "left: 55%;")}
   @media (max-width: 768px) {
     top: 300px;
   }
@@ -295,11 +296,12 @@ const JobTitleDiv = styled.div`
 
 const JobTitleSecondDiv = styled.div`
   ${common}
+  ${(props) => (props.switch ? "right: 55%;" : "left: 55%;")}
 `;
 
 const JobTitleThirdDiv = styled.div`
   ${common}
-
+  ${(props) => (props.switch ? "right: 55%;" : "left: 55%;")}
   @media (max-width: 768px) {
     top: 180px;
   }
