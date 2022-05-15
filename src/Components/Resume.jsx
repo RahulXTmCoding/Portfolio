@@ -92,10 +92,10 @@ const Resume = () => {
                 pub/sub , Redis ,Amazon sns.
               </span>
             </ExperienceContentDiv>
-            <JobTitleDiv switch={true}>
+            <JobTitleSecondDiv switch={true}>
               <h3>Mern Stack Developer</h3>
               <span>July 2020 - Oct 2020</span>
-            </JobTitleDiv>
+            </JobTitleSecondDiv>
           </Experince>
 
           <Experince>
@@ -112,11 +112,14 @@ const Resume = () => {
                 2. Worked on some additional features like file transfer and one
                 to one chat which were also a part of the project.
               </span>
+              <span>
+                Technologies & Tools used: Java, Socket Programming, Pub/Sub
+              </span>
             </ExperienceContentDiv>
-            <JobTitleDiv>
+            <JobTitleThirdDiv>
               <h3>SDE Intern</h3>
               <span>April 2020 - June 2020</span>
-            </JobTitleDiv>
+            </JobTitleThirdDiv>
           </Experince>
         </StyledWorkExperience>
       </Container>
@@ -261,26 +264,43 @@ const ArrowDiv = styled.div`
   }
 `;
 
-const JobTitleDiv = styled.div`
-  position: absolute;
-  top: 5px;
-  ${(props) => (props.switch ? "right: 55%;" : "left: 55%;")}
-  h3 {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 2px;
-  }
+const common = ` position: absolute;
+top: 5px;
+${(props) => (props.switch ? "right: 55%;" : "left: 55%;")}
+h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
 
-  span {
-    font-size: 14px;
+span {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  transform-origin: top left;
+  transform: translateY(100%) rotate(-90deg);
+  width: max-content;
+  top: 210px;
+  left: -15px;
+  right: unset;
+}`;
+
+const JobTitleDiv = styled.div`
+  ${common}
+  @media (max-width: 768px) {
+    top: 300px;
   }
+`;
+
+const JobTitleSecondDiv = styled.div`
+  ${common}
+`;
+
+const JobTitleThirdDiv = styled.div`
+  ${common}
 
   @media (max-width: 768px) {
-    transform-origin: top left;
-    transform: translateY(100%) rotate(-90deg);
-    width: max-content;
-    top: 220px;
-    left: -20px;
-    right: unset;
+    top: 180px;
   }
 `;
