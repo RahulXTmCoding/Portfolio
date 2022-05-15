@@ -2,7 +2,7 @@ import { Col, Row } from "antd";
 import styled from "styled-components";
 import Container from "./common/Container";
 import DevImage from "../assest/dev.png";
-import Photo from "../assest/photo.jfif";
+import Photo from "../assest/photo2.jpg";
 
 const About = () => {
   return (

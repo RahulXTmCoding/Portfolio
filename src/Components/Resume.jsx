@@ -23,38 +23,45 @@ const Resume = () => {
               <ArrowDiv />
               <h3>Redefined Corp</h3>
               <p>
-                Majorly involved software/app development using technologies
-                like Node.js, Hapi.js, JavaScript, Typescript, Typeorm,
-                Postgres,TypeOrm, Redis ,Bull.js, React, Next.js, Antd, CSS3,
-                HTML5 etc.
+                Majorly involved in software/app development using
+                technologies/skills like Node.js, Next.js, Hapi.js, JavaScript,
+                Typescript, Postgres, Mongodb, TypeOrm, Redis ,Bull.js, React,
+                Redux, React Query, Next.js, React Native, Antd, CSS3, HTML5,
+                Styled Components etc.
               </p>
               <span>
-                1. Integrated different databases using libraries like
-                MongooseJS & TypeORM.
+                1. Leading a team of 4 to develop and deploy recorem.com and
+                app.recorem.com.
               </span>
-              <br />
+
               <span>
-                2. Integrated Stripe payment gateway using Stripe’s REST API.
+                2. Optimized the job listing API and reduced the response time
+                by 80% .
               </span>
-              <br />
+
               <span>
-                3. Responsible for managing overall code quality & code
-                performance of the project.
+                3. Implemented the cross origin single signin for all domains
+                and sub-domains of Recorem.
               </span>
-              <br />
+
               <span>
-                4. Created REST API for multiple applications on Express &
-                NestJS (NodeJS frameworks).
+                4. Redesigned and Developed the Signup/Login flow to reduce the
+                time taken by users to go inside the app from the Signup page by
+                4X.
               </span>
-              <br />
+
               <span>
-                5. Implemented AWS s3 to the existing application to switch
-                storage to cloud.
+                5. Analyzed existing code and made changes to enhance the
+                quality of the existing application.
               </span>
-              <br />
+
+              <span>
+                6. Automated the deployment process that resulted in increasing
+                the productivity by 2X.
+              </span>
             </ExperienceContentDiv>
             <JobTitleDiv>
-              <h3>Full Stack Developer</h3>
+              <h3>Senior Full Stack Developer</h3>
               <span>Nov 2020 - Current</span>
             </JobTitleDiv>
           </Experince>
@@ -68,17 +75,18 @@ const Resume = () => {
               <ArrowDiv switch={true} />
               <h3>Pataran Technologies</h3>
               <span>
-                1. Developed app integration with REST APIs for Google Maps,
+                1. Developed the basic boiler plate converting XD designs to
+                React Native app for the client Reyo.
+              </span>
+              <span>
+                2. Developed app integration with REST APIs for Google Maps,
                 social media logins, payment processors, and other services
               </span>
-              <br />
+
               <span>
-                2. Developed full-stack Live Socketio,WebRTC Video + Messaging
+                3. Developed full-stack Live Socketio,WebRTC Video + Messaging
                 Chat Application (web and Android Application)
               </span>
-              <br />
-              <span>3. Dockerise Project and deploy Mern app On Aws Ec2.</span>
-              <br />
               <span>
                 4. Designed push notification system for React Native app using
                 pub/sub , Redis ,Amazon sns.
@@ -95,13 +103,15 @@ const Resume = () => {
             <ExperienceContentDiv className="wow slideInLeft animated">
               <ArrowDiv />
               <h3>Thinking Machines</h3>
-              <p>
-                Remote control program that can display a screen of another
-                computer (via internet or network) on your screen. The program
-                allows you to use your mouse and keyboard to control the other
-                PC remotely. The whole software is made in java. We used Swing,
-                Logging, and Thread APIs in this project.
-              </p>
+              <span>
+                1. Worked on a remote control application that not only displays
+                the screen of the connected client but lets you control their
+                system using your keyboard and mouse.
+              </span>
+              <span>
+                2. Worked on some additional features like file transfer and one
+                to one chat which were also a part of the project.
+              </span>
             </ExperienceContentDiv>
             <JobTitleDiv>
               <h3>SDE Intern</h3>
@@ -228,7 +238,8 @@ const ExperienceContentDiv = styled.div`
   }
 
   span {
-    margin-bottom: 2px;
+    display: block;
+    margin-bottom: 8px;
   }
 `;
 
